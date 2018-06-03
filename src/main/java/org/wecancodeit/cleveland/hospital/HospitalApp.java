@@ -43,7 +43,33 @@ public class HospitalApp {
 					System.out.println("Enter the speciality area: ");
 					String speciality = input.nextLine();
 					myHospital.hire(new Doctor(empNumber, name, speciality));
-				} // dynamically hire other employees here
+				} else if (position.equals("Nurse")) {
+					System.out.println("Enter the employee number:");
+					String empNumber = input.nextLine();
+					System.out.println("Enter the name of the Nurse: ");
+					String name = input.nextLine();
+					System.out.println("Enter the number of patients: ");
+					int numPatients = input.nextInt();
+					myHospital.hire(new Nurse(empNumber, name, numPatients));
+				} else if (position.equals("Janitor")) {
+					System.out.println("Enter the employee number:");
+					String empNumber = input.nextLine();
+					System.out.println("Enter the name of the Janitor: ");
+					String name = input.nextLine();
+					System.out.println("The janitor is sweeping (true or false?): ");
+					boolean isSweeping = input.nextBoolean();
+					myHospital.hire(new Janitor(empNumber, name, isSweeping));
+				} else if (position.equals("Surgeon")) {
+					System.out.println("Enter the employee number:");
+					String empNumber = input.nextLine();
+					System.out.println("Enter the name of the Surgeon: ");
+					String name = input.nextLine();
+					System.out.println("Enter the speciality area: ");
+					String speciality = input.nextLine();
+					System.out.println("The surgeon is operating (true or false?): ");
+					boolean isOperating = input.nextBoolean();
+					myHospital.hire(new Surgeon(empNumber, name, speciality, isOperating));
+				}
 
 			} else if (choice.equals("2")) {
 				System.out.println("Here are our employees");

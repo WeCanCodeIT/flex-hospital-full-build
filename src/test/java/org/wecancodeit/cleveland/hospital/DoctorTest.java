@@ -30,11 +30,11 @@ public class DoctorTest {
 
 	@Test
 	public void shouldLowerBloodLevelsFrom10To5() {
-        anyDoctor.drawBlood(anyPatient);
-        int checkBlood = anyPatient.getBloodLevel();
-        assertEquals(5, checkBlood);
+		anyDoctor.drawBlood(anyPatient);
+		int checkBlood = anyPatient.getBloodLevel();
+		assertEquals(5, checkBlood);
 	}
-	
+
 	@Test
 	public void shouldHaveASalaryOf90000() {
 		int salary = anyDoctor.calculatePay();

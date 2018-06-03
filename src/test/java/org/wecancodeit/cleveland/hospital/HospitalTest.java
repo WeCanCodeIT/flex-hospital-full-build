@@ -41,17 +41,17 @@ public class HospitalTest {
 		assertThat(foundJanitor, is(rosie));
 		assertThat(foundDoctor, is(phil));
 	}
-	
+
 	@Test
 	public void hospitalShouldHireACollectionOfEmployees() {
 		myHospital.hire(rosie);
 		myHospital.hire(phil);
 		Collection<Employee> hiredEmployees = myHospital.getAllEmployees();
 		assertThat(hiredEmployees, containsInAnyOrder(rosie, phil));
-		//OR
+		// OR
 		assertThat(hiredEmployees.size(), is(2));
 	}
-	
+
 	@Test
 	public void hospitalShouldBeAbleToFireAnEmployee() {
 		myHospital.hire(rosie);
@@ -59,7 +59,7 @@ public class HospitalTest {
 		myHospital.fire(phil);
 		Collection<Employee> hiredEmployees = myHospital.getAllEmployees();
 		assertThat(hiredEmployees, containsInAnyOrder(rosie));
-		//OR
+		// OR
 		assertThat(hiredEmployees.size(), is(1));
 	}
 

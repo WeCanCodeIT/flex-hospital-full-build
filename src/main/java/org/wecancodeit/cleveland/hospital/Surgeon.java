@@ -13,11 +13,10 @@ public class Surgeon extends Doctor {
 
 		return isOperating;
 	}
-	
+
 	@Override
 	public int calculatePay() {
 		return 120_000;
 	}
 
-	
 }

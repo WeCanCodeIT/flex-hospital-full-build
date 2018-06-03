@@ -34,11 +34,10 @@ public class Hospital {
 
 	public void showAllMedicalPersonnel() {
 		for (Employee employee : employees.values()) {
-			if(employee instanceof  MedicalDuties) {
-				System.out.println("Emp Number: " + employee.getNumber() + 
-						" Name: " + employee.getName());
+			if (employee instanceof MedicalDuties) {
+				System.out.println("Emp Number: " + employee.getNumber() + " Name: " + employee.getName());
 			}
 		}
-		
+
 	}
 }

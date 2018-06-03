@@ -6,7 +6,7 @@ public abstract class Employee {
 	protected String name;
 
 	public Employee() {
-		
+
 	}
 
 	public String getNumber() {
@@ -17,7 +17,7 @@ public abstract class Employee {
 		return name;
 	}
 
-	//write a contract that all employees must get paid (something...)
+	// write a contract that all employees must get paid (something...)
 	public abstract int calculatePay();
 
 }

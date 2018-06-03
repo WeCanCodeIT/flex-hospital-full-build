@@ -19,5 +19,4 @@ public class Janitor extends Employee {
 		return 40000;
 	}
 
-
 }
